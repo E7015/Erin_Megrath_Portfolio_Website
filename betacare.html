@@ -10,20 +10,21 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <body id="top"></body>
   
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="header-content">
       <a href="index.html" class="logo" aria-label="Erin Megrath Home">
-        <div class="logo-icon">EM</div>
-        <span>Erin Megrath</span>
-      </a>
+  <img src="images/website_em_logo.png" alt="EM Logo" class="logo-icon-img">
+  <span>Erin Megrath</span>
+</a>
       <nav role="navigation" aria-label="Main navigation">
         <ul class="nav-menu">
           <li><a href="about.html">About</a></li>
@@ -38,25 +39,203 @@
   <!-- Main Content -->
   <main>
     
-    <!-- Case Study Hero -->
-    <section class="case-study-hero">
-      <div class="container">
+   <!-- Case Study Hero -->
+<section class="case-study-hero">
+  <div class="container">
+    <a href="portfolio.html" class="back-arrow" aria-label="Back to Portfolio">&lt;</a>
+    
+    <div class="case-study-header">
+      <div class="case-study-text">
         <h1>BetaCare</h1>
-        <p style="font-size: 1.5rem; margin-bottom: 3rem;">A smartwatch app that improves and supports diabetes management</p>
-        
+        <p class="case-study-tagline">Logging made beta,<br>living made better.</p>
+        <p class="case-study-description">BetaCare is a living journal for those managing their diabetes journey, logging readings and activities with a single tap. Its AI quietly tracks data to spot emerging trends and offer timely, tailored nudges. It works as a proactive partner that keeps the user informed, confident, and in control every day.</p>
+      </div>
+      
+      <img 
+        src="images/betacare_cover.png" 
+        alt="BetaCare case study showing smartwatch app designs"
+        class="case-study-hero-image"
+        loading="lazy">
+    </div>
+    
+    <!-- Brief Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Brief</h2>
+      <p class="case-study-description">This project required designing a digital concept through at least three key screens. Alongside the interface design, I developed a supporting style guide and visual grammar to establish a consistent brand identity. The final outcome was a set of high‑resolution mock‑ups that showcased both the brand identity and user experience. To push the brief further, I also created a mobile companion app, an opportunity to challenge myself and ensure the design system worked consistently across platforms.</p>
+    </div>
+
+    <!-- Ideation Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Ideation</h2>
+      <p class="case-study-description">As part of the ideation phase, we ran a workshop exploring allegorical connections across diverse contexts such as health, wellness, education, and finance. One concept that stood out to me was a wellness journaling tracker, which naturally connected to ideas around health management. The theme of diabetes, in particular, resonated on a personal level—I've experienced it firsthand and supported others navigating it. This gave me the confidence and motivation to design a more personalised and informative experience for people living with diabetes, ensuring the solution felt both empathetic and practical.</p>
+      
+      <img 
+        src="images/betacare_ideation_image.png" 
+        alt="BetaCare ideation sketches and concepts"
+        class="case-study-section-image"
+        loading="lazy">
+    </div>
+
+    <!-- Research Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Research</h2>
+      <p class="case-study-description">To ground my concept in real user needs, I began with a competitor analysis of existing diabetes management and wellness apps, identifying both strengths and gaps in the current market. I then created a questionnaire and distributed it to my target audience—young teens through to adults living with type 1 diabetes. The responses provided valuable feedback on my early ideas, as well as suggestions for features they would like to see.</p>
+      
+      <p class="case-study-description">To gain deeper insights, I conducted an in‑depth interview with a friend who has type 1 diabetes, which gave me a more personal perspective on daily challenges and opportunities for improvement. After synthesising all of this feedback, I developed user personas and empathy maps to capture key behaviours, goals, and frustrations. These became the foundation for guiding design decisions and ensuring the final product remained empathetic, relevant, and user‑centred.</p>
+      
+      <div class="case-study-image-grid">
         <img 
-          src="images/betacare.png" 
-          alt="BetaCare case study showing smartwatch app designs"
-          class="case-study-image"
+          src="images/betacare_research_pic_left.png" 
+          alt="BetaCare research documentation left"
+          class="case-study-grid-image"
+          loading="lazy">
+        <img 
+          src="images/betacare_research_pic_right.png" 
+          alt="BetaCare research documentation right"
+          class="case-study-grid-image"
           loading="lazy">
       </div>
-    </section>
+    </div>
+
+    <!-- Concept Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Concept</h2>
+      <p class="case-study-description">After reviewing my research, I identified that framing the app as a personal journal supported by an AI assistant was the most effective direction. The journaling aspect allows users to log key details such as meals, insulin, and daily habits, while the AI works in the background to recognise patterns and highlight harder‑to‑spot trends. Beyond data insights, the AI also provides personalised and immediate support—something many participants highlighted as valuable, especially since reaching a diabetes care team can often be difficult in urgent situations. This approach combines the familiarity of journaling with the intelligence of real‑time guidance, creating a tool that feels both supportive and empowering.</p>
+    </div>
+    
+    <!-- Sketching Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Sketching</h2>
+      <p class="case-study-description">I mapped out rough frames to explore the core structure of the smartwatch app, deciding on five main screens: Glucose, Emergency, AI Assistant, Activity Log, and Reminders. From the start, I aimed to keep the design consistent with the mobile companion app, while also expanding the mobile version to include a dashboard and richer detail. For example, the Emergency screen was initially planned to include contact details, location sharing, and health status across both platforms, but I refined this so the smartwatch focused only on the essentials: quick access to an emergency contact and a direct 999 call, while the mobile app carried the fuller set of information.</p>
+      
+      <div class="case-study-image-grid">
+        <img 
+          src="images/betacare_sketch_topleft.png" 
+          alt="BetaCare sketches top left"
+          class="case-study-grid-image"
+          loading="lazy">
+        <img 
+          src="images/betacare_sketch_topright.png" 
+          alt="BetaCare sketches top right"
+          class="case-study-grid-image"
+          loading="lazy">
+      </div>
+      
+      <div class="case-study-image-grid" style="margin-top: var(--spacing-md);">
+        <img 
+          src="images/betacare_sketch_bottomleft.png" 
+          alt="BetaCare sketches bottom left"
+          class="case-study-grid-image"
+          loading="lazy">
+        <img 
+          src="images/betacare_sketch_bottomright.png" 
+          alt="BetaCare sketches bottom right"
+          class="case-study-grid-image"
+          loading="lazy">
+      </div>
+    </div>
+
+    <!-- Digital Development Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Digital Development</h2>
+      
+      <div class="case-study-two-column">
+        <div class="case-study-column-text">
+          <p class="case-study-description">In developing the app, I moved from lo‑fi to hi‑fi wireframes with a clear goal: to design a simple, intuitive interface that makes logging medical information quick and stress‑free. Because diabetes management involves so much data, I focused on identifying the most essential inputs and presenting them in a way that felt approachable and easy to navigate. The journaling and AI assistant features were integrated seamlessly, ensuring they supported the core experience of logging and spotting trends without adding complexity.</p>
+        </div>
+        
+        <img 
+          src="images/betacare_lofi.png" 
+          alt="BetaCare lo-fi wireframes"
+          class="case-study-column-image"
+          loading="lazy">
+      </div>
+      
+      <img 
+        src="images/betacare_hifi.png" 
+        alt="BetaCare hi-fi wireframes"
+        class="case-study-section-image"
+        loading="lazy">
+    </div>
+
+    <!-- Final Screens Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Final Screens</h2>
+      
+      <img 
+        src="images/betacare_finalscreens.png" 
+        alt="BetaCare final screen designs"
+        class="case-study-section-image"
+        loading="lazy">
+    </div>
+    
+    <!-- Testing & Feedback Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Testing & Feedback</h2>
+      <p class="case-study-description">For testing, I returned to the same group who had completed my initial questionnaire and asked them to try the prototype. They responded positively, particularly appreciating the journaling feature and noting how straightforward the logging process felt. Overall, the feedback in class was very positive, confirming that the design was clear, intuitive, and met the user's needs, which I was very pleased about.</p>
+    </div>
+    
+    <!-- Final Design Section -->
+    <div class="case-study-brief">
+      <h2 class="case-study-section-title">Final Design</h2>
+      <p class="case-study-description">The final step was preparing a presentation that walked through the app's flow and highlighted how the features came together to support users in managing their diabetes.</p>
+      
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+        <div class="slide active">
+          <img src="images/betacare_slide1.png" alt="BetaCare presentation slide 1" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide2.png" alt="BetaCare presentation slide 2" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide3.png" alt="BetaCare presentation slide 3" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide4.png" alt="BetaCare presentation slide 4" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide5.png" alt="BetaCare presentation slide 5" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide6.png" alt="BetaCare presentation slide 6" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide7.png" alt="BetaCare presentation slide 7" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide8.png" alt="BetaCare presentation slide 8" class="slide-image">
+        </div>
+        <div class="slide">
+          <img src="images/betacare_slide9.png" alt="BetaCare presentation slide 9" class="slide-image">
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slide-arrow prev" onclick="changeSlide(-1)" aria-label="Previous slide">&lt;</button>
+        <button class="slide-arrow next" onclick="changeSlide(1)" aria-label="Next slide">&gt;</button>
+        
+        <!-- Slide counter -->
+        <div class="slide-counter">
+          <span class="current-slide">1</span> / <span class="total-slides">9</span>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="case-study-cta">
+        <a href="https://www.figma.com/proto/uOP9MWiqYyLPSn1pVy2w7Q/UXD301-Smartwatch-Prototype?node-id=1-200&p=f&t=7lTxD5CwfmWOiguM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="cta-button">Go to BetaCare Figma Prototype</a>
+      </div>
+      
+      <div class="case-study-cta">
+        <a href="#top" class="cta-button">Back To Top</a>
+      </div>
+    </div>
+    </div>
 
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
         <h2 class="cta-title">See the full story</h2>
-        <a href="#" class="cta-button">Check out my Notion blog</a>
+        <a href="https://erin-megrath.notion.site/portfolio" target="_blank" rel="noopener noreferrer" class="cta-button">Check out my Notion blog</a>
       </div>
     </section>
 
@@ -66,9 +245,9 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-content">
       <a href="index.html" class="footer-logo" aria-label="Erin Megrath Home">
-        <div class="footer-logo-icon">EM</div>
-        <span>Erin Megrath</span>
-      </a>
+  <img src="images/website_em_logo.png" alt="EM Logo" class="footer-logo-icon-img">
+  <span>Erin Megrath</span>
+</a>
       <nav role="navigation" aria-label="Footer navigation">
         <ul class="footer-nav">
           <li><a href="mailto:erinmegrathdesign@gmail.com">Email</a></li>
@@ -78,6 +257,43 @@
       </nav>
     </div>
   </footer>
+<script>
+let currentSlide = 1;
+const totalSlides = 9;
 
+function changeSlide(direction) {
+  // Hide current slide
+  const slides = document.querySelectorAll('.slide');
+  slides[currentSlide - 1].classList.remove('active');
+  
+  // Update current slide number
+  currentSlide += direction;
+  
+  // Loop around if at beginning or end
+  if (currentSlide > totalSlides) {
+    currentSlide = 1;
+  } else if (currentSlide < 1) {
+    currentSlide = totalSlides;
+  }
+  
+  // Show new slide
+  slides[currentSlide - 1].classList.add('active');
+  
+  // Update counter
+  document.querySelector('.current-slide').textContent = currentSlide;
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowLeft') {
+    changeSlide(-1);
+  } else if (event.key === 'ArrowRight') {
+    changeSlide(1);
+  }
+});
+</script>
+
+</body>
+</html>
 </body>
 </html>
