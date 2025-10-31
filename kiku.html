@@ -15,15 +15,15 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="header-content">
       <a href="index.html" class="logo" aria-label="Erin Megrath Home">
-  <img src="images/website_em_logo.png" alt="EM Logo" class="logo-icon-img">
-  <span>Erin Megrath</span>
-</a>
+        <img src="images/website_em_logo.png" alt="EM Logo" class="logo-icon-img">
+        <span>Erin Megrath</span>
+      </a>
       <nav role="navigation" aria-label="Main navigation">
         <ul class="nav-menu">
           <li><a href="about.html">About</a></li>
@@ -41,43 +41,241 @@
     <!-- Case Study Hero -->
     <section class="case-study-hero">
       <div class="container">
-        <h1>Kiku</h1>
-        <p style="font-size: 1.5rem; margin-bottom: 3rem;">A modern bank brand to help young people take control of their financial journey</p>
+        <a href="portfolio.html" class="back-arrow" aria-label="Back to Portfolio">&lt;</a>
         
-        <img 
-          src="images/kiku.png" 
-          alt="Kiku case study showing banking app designs with green branding"
-          class="case-study-image"
-          loading="lazy">
+        <div class="case-study-header">
+          <div class="case-study-text">
+            <h1>Kiku</h1>
+            <p class="case-study-tagline">Where your money takes shape.</p>
+            <p class="case-study-description">Kiku is a modern bank app which seeks to empower the next generation to take control of their financial journey. Through offering personalised insights and jargon-free advice, Kiku demystifies complex financial concepts, promoting confident decision-making.</p>
+          </div>
+          
+          <img 
+            src="images/kiku_cover.png" 
+            alt="Kiku case study showing banking app designs"
+            class="case-study-hero-image"
+            loading="lazy">
+        </div>
+        
+        <!-- Brief Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Brief</h2>
+          <p class="case-study-description">The brief was to design a digital banking brand aimed at young people, including a mobile app, a set of brand guidelines, and a landing page.</p>
+        </div>
+        
+        <!-- Concept Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Concept</h2>
+          <p class="case-study-description">The concept for my bank would be to help young people learn how to prosper with their money by helping them to understand it and their opportunity. I felt that a lot of young people didn't consider investments, managing their savings, etc as they didn't understand a lot of the financial jargon that is often thrown around. I wanted to create a bank that was jargon-free, keeping things simple and guiding the users through their financial journey with simple explanations so they understand what they can do with their money with tailored advice, suggestions and goals.</p>
+        </div>
+        
+        <!-- Research Section -->
+<div class="case-study-brief">
+  <h2 class="case-study-section-title">Research</h2>
+  <p class="case-study-description">I combined branch interviews, a user questionnaire, competitor analysis, and a review of successful UI patterns to understand how young people engage with banking. The findings revealed common frustrations with jargon-heavy language, information overload, and uncertainty around saving, which shaped the direction of the project toward clarity, simplicity, and confidence-building features.</p>
+  
+  <div class="case-study-image-grid">
+  <img 
+    src="images/kiku_research_left.png" 
+    alt="Kiku research documentation left"
+    class="case-study-grid-image-no-border"
+    loading="lazy">
+  <img 
+    src="images/kiku_research_right.png" 
+    alt="Kiku research documentation right"
+    class="case-study-grid-image-no-border"
+    loading="lazy">
+</div>
+</div>
+        
+        <!-- Brand Development Section -->
+<div class="case-study-brief">
+  <h2 class="case-study-section-title">Brand Development</h2>
+  
+  <div class="case-study-two-column">
+    <div class="case-study-column-text">
+      <p class="case-study-description">I chose the name Kiku for my bank brand for its layered symbolism. In Japanese, it refers to the chrysanthemum flower, a cultural emblem of rejuvenation and prosperity. This sense of renewal aligns with the brand's mission to help young people craft stronger financial futures.</p>
+      
+      <p class="case-study-description">After some deliberation on selecting a typeface, I opted for a custom one. This custom wordmark draws inspiration from the precision of Japanese origami, reflecting both craftsmanship and the idea of shaping something personal, as well as shaping the user's financial journey. Varying font weights were used to represent individuality, highlighting how the brand offers tailored solutions for every customer.</p>
+    </div>
+    
+    <img 
+      src="images/kiku_wordmark_development.png" 
+      alt="Kiku wordmark development process"
+      class="case-study-column-image-no-border"
+      loading="lazy">
+  </div>
+  
+  <p class="case-study-description case-study-spacing-top">The logomark brings together multiple meanings in a single, cohesive form. At its core, it shapes the letter "K," while also abstractly forming a phoenix—an enduring symbol of resilience, rebirth, and transformation. This duality captures the brand's values: igniting growth, empowering users, and guiding them toward prosperity and balance. The phoenix's connection to fire also echoes the vitality and strength associated with the Kiku flower itself.</p>
+  
+  <img 
+    src="images/kiku_logo_development.png" 
+    alt="Kiku logo development process"
+    class="case-study-section-image-no-border"
+    loading="lazy">
+  
+  <div class="case-study-two-column">
+    <div class="case-study-column-text">
+      <p class="case-study-description">Supporting these elements is the colour palette centred on green, with a deep, dark green as the foundation. This choice conveys stability and confidence while also symbolising growth, prosperity, and balance.</p>
+    </div>
+    
+    <img 
+      src="images/kiku_brandmark.png" 
+      alt="Kiku brandmark and color palette"
+      class="case-study-column-image-no-border"
+      loading="lazy">
+  </div>
+</div>
+
+<!-- Brand Application Section -->
+<div class="case-study-brief">
+  <h2 class="case-study-section-title">Brand Application</h2>
+  <p class="case-study-description">I began with card designs, exploring a standard horizontal layout with a minimal approach, featuring only the logo. I pushed this idea further by shifting to a vertical orientation, allowing the logo to take centre stage. Choosing metal cards enhanced the premium feel, complemented the gradient logo, and reinforced the brand's values of stability.</p>
+  
+  <p class="case-study-description">For advertising and stationery, I carried through the same minimalistic ethos. Bold typography and simple, origami-inspired icons echoed the logomark's design language, creating a cohesive visual identity. Taglines such as "Where your money takes shape" tied back to the themes of craftsmanship and transformation. Supporting graphics, like upward-pointing arrows derived from the logo, reinforced consistency and the brand's forward-thinking outlook.</p>
+  
+  <img 
+    src="images/kiku_styletile.png" 
+    alt="Kiku style tile showing brand elements"
+    class="case-study-section-image-no-border"
+    loading="lazy">
+  
+  <img 
+    src="images/kiku_advertising.png" 
+    alt="Kiku advertising designs"
+    class="case-study-section-image-no-border"
+    loading="lazy">
+  
+  <img 
+    src="images/kiku_stationery.png" 
+    alt="Kiku stationery designs"
+    class="case-study-section-image-no-border"
+    loading="lazy">
+</div>
+        
+        <!-- Banking App Section -->
+<div class="case-study-brief">
+  <h2 class="case-study-section-title">Banking App</h2>
+  
+  <div class="case-study-two-column">
+    <div class="case-study-column-text">
+      <p class="case-study-description">I initially used Revolut as a reference point to understand common app patterns, however, I quickly moved beyond it, redesigning components, rethinking interactions and creating new flows. Most of the screens were ultimately designed from scratch, with the dashboard being the central and most significant piece, crafted to strip away unnecessary complexity and present key financial information in a clean, intuitive way.</p>
+      
+      <div class="case-study-cta">
+        <a href="https://www.figma.com/proto/8DyFmJsKFuqz4ZtBtXWKAY/UXD103-Kiku-Bank-App-Prototyped?node-id=1-1630&t=4GzXtVsIhrtNcrcZ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A789&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" class="cta-button">Go to Kiku App Prototype</a>
       </div>
-    </section>
+    </div>
+    
+    <img 
+      src="images/kiku_app.png" 
+      alt="Kiku banking app design"
+      class="case-study-column-image-no-border"
+      loading="lazy">
+  </div>
+</div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <h2 class="cta-title">See the full story</h2>
-        <a href="https://erin-megrath.notion.site/portfolio" target="_blank" rel="noopener noreferrer" class="cta-button">Check out my Notion blog</a>
+<!-- Landing Page Section -->
+<div class="case-study-brief">
+  <h2 class="case-study-section-title">Landing Page</h2>
+  
+  <div class="case-study-two-column">
+    <div class="case-study-column-text">
+      <p class="case-study-description">I focused on highlighting the app's core features while weaving in the brand's values of simplicity and integrity. The design balanced clear, benefit‑driven messaging with a clean visual hierarchy, ensuring that users could quickly understand what the app offers. The result was a page that showcased functionality and reinforced brand identity.</p>
+      
+      <div class="case-study-cta">
+        <a href="https://www.figma.com/proto/NNDt4B0qxPeVrsOvJSacIU/UXD103-Kiku-Landing-Page-Prototyped?node-id=1-803&t=XR7gHryljXHlsNl6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="cta-button">Go to Kiku Landing Page Prototype</a>
       </div>
-    </section>
+    </div>
+    
+    <img 
+      src="images/kiku_website.png" 
+      alt="Kiku landing page design"
+      class="case-study-column-image-no-border"
+      loading="lazy">
+  </div>
+</div>
 
-  </main>
+<!-- Brand Guidelines Section -->
+<div class="case-study-brief">
+  <h2 class="case-study-section-title">Brand Guidelines</h2>
+  
+  <div class="case-study-two-column">
+    <div class="case-study-column-text">
+      <p class="case-study-description">I set out to create a detailed and comprehensive document that captured the brand identity in a clear, structured way. Beyond just logos and colours, the guidelines were designed to encapsulate the full identity: tone of voice, visual language, and design principles. The result was a reference point that not only standardized design decisions but also communicated the spirit of Kiku as a brand.</p>
+      
+      <div class="case-study-cta">
+        <a href="https://www.figma.com/design/BPnRaSGEhqT3rSIns1D3Di/UXD103-Kiku-Brand-Guidelines-Document?node-id=0-1&t=ZHsVADDwe7MERI0x-1" target="_blank" rel="noopener noreferrer" class="cta-button">Go to Kiku Brand Guidelines</a>
+      </div>
+    </div>
+    
+    <img 
+      src="images/kiku_guidelines.png" 
+      alt="Kiku brand guidelines document"
+      class="case-study-column-image-no-border"
+      loading="lazy">
+  </div>
+  
+  <div class="case-study-two-column case-study-spacing-top">
+    <div class="case-study-column-text">
+      <p class="case-study-description">While the brand guidelines provided a strong foundation, I found them somewhat limiting for displaying the full depth of details and practical usage. To address this, I went beyond the initial scope and created a dedicated design system website. This platform allowed me to present components, patterns, and principles in a more dynamic, accessible way.</p>
+      
+      <p class="case-study-description">Although not required, it became one of the project's biggest successes—serving as a living resource that made the brand easier to apply consistently across all touchpoints.</p>
+      
+      <div class="case-study-cta">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="cta-button">Go to Design System Prototype</a>
+      </div>
+    </div>
+    
+    <div class="case-study-column-images">
+      <img 
+        src="images/kiku_designsystem1.png" 
+        alt="Kiku design system website part 1"
+        class="case-study-column-image-no-border"
+        loading="lazy">
+      <img 
+        src="images/kiku_designsystem2.png" 
+        alt="Kiku design system website part 2"
+        class="case-study-column-image-no-border case-study-stacked-image"
+        loading="lazy">
+    </div>
+  </div>
+</div>
 
-  <!-- Footer -->
+<!-- Back to Top Button -->
+<div class="case-study-brief">
+  <div class="case-study-cta">
+        <a href="#top" class="cta-button">Back To Top</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title">See the full story</h2>
+      <a href="https://erin-megrath.notion.site/portfolio" target="_blank" rel="noopener noreferrer" class="cta-button">Check out my Notion blog</a>
+    </div>
+  </section>
+
+</main>
+        
+
+<!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-content">
       <a href="index.html" class="footer-logo" aria-label="Erin Megrath Home">
-  <img src="images/website_em_logo.png" alt="EM Logo" class="footer-logo-icon-img">
-  <span>Erin Megrath</span>
-</a>
+        <img src="images/website_em_logo.png" alt="EM Logo" class="footer-logo-icon-img">
+        <span>Erin Megrath</span>
+      </a>
       <nav role="navigation" aria-label="Footer navigation">
         <ul class="footer-nav">
           <li><a href="mailto:erinmegrathdesign@gmail.com">Email</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/erin-megrath-89b423312" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/erinmegrathdesign" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </nav>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>
