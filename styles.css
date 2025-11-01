@@ -630,6 +630,58 @@ p {
   margin-top: var(--spacing-xl);
 }
 
+/* Subsection titles (same size as tagline) */
+.case-study-subsection-title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+/* Bullet lists in case studies */
+.case-study-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: var(--spacing-sm);
+}
+
+.case-study-list li {
+  font-size: 1.05rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Three column grid for social media posts */
+.case-study-image-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  align-items: stretch;
+}
+
+.case-study-image-grid-three img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Responsive for 3-column grid */
+@media (max-width: 1024px) {
+  .case-study-image-grid-three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .case-study-image-grid-three {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .case-study-header {

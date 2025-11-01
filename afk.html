@@ -15,15 +15,15 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="header-content">
       <a href="index.html" class="logo" aria-label="Erin Megrath Home">
-  <img src="images/website_em_logo.png" alt="EM Logo" class="logo-icon-img">
-  <span>Erin Megrath</span>
-</a>
+        <img src="images/website_em_logo.png" alt="EM Logo" class="logo-icon-img">
+        <span>Erin Megrath</span>
+      </a>
       <nav role="navigation" aria-label="Main navigation">
         <ul class="nav-menu">
           <li><a href="about.html">About</a></li>
@@ -41,14 +41,212 @@
     <!-- Case Study Hero -->
     <section class="case-study-hero">
       <div class="container">
-        <h1>AFK</h1>
-        <p style="font-size: 1.5rem; margin-bottom: 3rem;">A music player app tailored for game and soundtrack enthusiasts</p>
+        <a href="portfolio.html" class="back-arrow" aria-label="Back to Portfolio">&lt;</a>
         
-        <img 
-          src="images/afk.png" 
-          alt="AFK case study showing music player app designs"
-          class="case-study-image"
-          loading="lazy">
+        <div class="case-study-header">
+          <div class="case-study-text">
+            <h1>AFK</h1>
+            <p class="case-study-tagline">Go AFK, stay in the rhythm</p>
+            <p class="case-study-description">AFK is a music player app that focuses on video game soundtracks, tailored for users who appreciate the artistry of game soundtracks and is all about discovery—finding new games through music and celebrating the composers who bring virtual worlds to life.</p>
+          </div>
+          
+          <img 
+            src="images/afk_cover.png" 
+            alt="AFK case study showing music player app designs"
+            class="case-study-hero-image"
+            loading="lazy">
+        </div>
+        
+        <!-- Brief Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Brief</h2>
+          <p class="case-study-description">The brief was to design and prototype a mobile music player app that delivers a seamless listening experience and a bespoke set of icons.</p>
+        </div>
+        
+        <!-- Ideation Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Ideation</h2>
+          
+          <div class="case-study-two-column">
+            <div class="case-study-column-text">
+              <p class="case-study-description">I began the ideation process with a broad mind map to identify the core elements of a music streaming app. Early on, I explored how visual presentation could shape the experience, considering whether imagery should lean towards photography or illustration.</p>
+              
+              <p class="case-study-description">I also experimented with the idea of positioning the app as a socially-driven platform (similar to a social network for music) where users could connect over shared tastes, leave live comments on tracks, and participate in community-driven features such as awards for the most anticipated upcoming artist.</p>
+              
+              <p class="case-study-description">However, I wanted to refine the concept into something more focused. Since the brief allowed for designing around a specific genre, I chose to centre the app on video game soundtracks, giving the product a distinctive identity and a clear direction.</p>
+            </div>
+            
+            <img 
+              src="images/afk_ideation.png" 
+              alt="AFK ideation process"
+              class="case-study-column-image-no-border"
+              loading="lazy">
+          </div>
+        </div>
+        
+        <!-- Concept Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Concept</h2>
+          <p class="case-study-description">My concept was to create a music streaming app designed for video game soundtracks with one of the core ideas behind it being users discovering new games through the music. Just as players might discover new artists through traditional streaming platforms, this app would let users find new games by exploring their music first. A soundtrack can reveal a lot about a game's atmosphere, storytelling, and design, and so this app helps users connect with titles they might not have encountered otherwise. It would also encourage a deeper appreciation of game composers and the artistry behind video game music. Many soundtracks are carefully composed to match a game's tone, pacing, etc, and so this would shine a spotlight on that craftsmanship, allowing users to enjoy game music in its own right.</p>
+        </div>
+        
+        <!-- Research Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Research</h2>
+          
+          <div class="case-study-two-column">
+            <div class="case-study-column-text">
+              <p class="case-study-description">In reviewing music apps, I found they succeeded by offering strong personalisation, tailoring playlists and recommendations to individual listening habits. They also emphasise interactive discovery, encouraging users to explore new music through curated collections and social features.</p>
+              
+              <p class="case-study-description">At the same time, many suffer from cluttered interfaces, where too many competing elements make navigation overwhelming.</p>
+              
+              <p class="case-study-description">Through this research, I also noticed a gap in the market: while mainstream apps cover broad genres, there are very few platforms dedicated specifically to soundtrack‑driven listening, such as video game or film scores—highlighting an opportunity for differentiation.</p>
+            </div>
+            
+            <img 
+              src="images/afk_research.png" 
+              alt="AFK research findings"
+              class="case-study-column-image-no-border"
+              loading="lazy">
+          </div>
+        </div>
+        
+        <!-- Sketching Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Sketching</h2>
+          <p class="case-study-description">I mapped out the core screens of the app, including Playing Music, Discovery/Search, Home, Profile, Library, and My Music, to establish a clear user flow. I also explored additional video game–specific screens to highlight the soundtrack focus and differentiate the experience from standard music apps.</p>
+          
+          <div class="case-study-image-grid">
+  <img 
+    src="images/afk_sketchtopleft.png" 
+    alt="AFK sketches top left"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: auto;">
+  <img 
+    src="images/afk_sketchtopright.png" 
+    alt="AFK sketches top right"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: 100%; object-fit: cover; object-position: top left;">
+</div>
+
+<div class="case-study-image-grid" style="margin-top: var(--spacing-md);">
+  <img 
+    src="images/afk_sketchmiddleleft.png" 
+    alt="AFK sketches middle left"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: auto;">
+  <img 
+    src="images/afk_sketchmiddleright.png" 
+    alt="AFK sketches middle right"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: 100%; object-fit: cover; object-position: top left;">
+</div>
+
+<div class="case-study-image-grid" style="margin-top: var(--spacing-md);">
+  <img 
+    src="images/afk_sketchbottomleft.png" 
+    alt="AFK sketches bottom left"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: auto;">
+  <img 
+    src="images/afk_sketchbottomright.png" 
+    alt="AFK sketches bottom right"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: 100%; object-fit: cover; object-position: top left;">
+</div>
+        </div>
+        
+        <!-- Digital Development Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Digital Development</h2>
+          <p class="case-study-description">I began with low‑fidelity wireframes to quickly map out the structure and flow of the app before moving into high‑fidelity screens. Throughout this stage, I carefully considered consistency in style, brand identity, and how to capture the 'game‑inspired' vibe through colour, typography, and iconography. I also created a style guide to ensure visual cohesion across the interface. In the end, I designed far more screens than originally required, as I wanted to fully flesh out the experience and make the app feel more real and functional.</p>
+          
+          <img 
+            src="images/afk_wireframes.png" 
+            alt="AFK wireframes"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+          
+          <img 
+            src="images/afk_styleguide.png" 
+            alt="AFK style guide"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+          
+          <img 
+            src="images/afk_digitaldevelopment.png" 
+            alt="AFK digital development"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+        </div>
+        
+        <!-- Prototyping Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Prototyping</h2>
+          <p class="case-study-description">This was my first experience with prototyping, and while the large number of screens initially felt daunting, the process quickly started to make sense. It was rewarding to connect everything together and see the app come to life as a functional, interactive experience.</p>
+          
+          <img 
+            src="images/afk_prototyping.png" 
+            alt="AFK prototyping process"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+        </div>
+        
+        <!-- Final Design Section -->
+        <div class="case-study-brief">
+          <h2 class="case-study-section-title">Final Design</h2>
+          <p class="case-study-description">I was pleased with how many screens I produced, resulting in a well‑fleshed‑out app that felt unique and seamless. Developing and refining the user flow was especially enjoyable, as it brought the whole experience together.</p>
+          
+          <img 
+            src="images/afk_finaltop.png" 
+            alt="AFK final design top"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+          
+          <div class="case-study-image-grid">
+  <img 
+    src="images/afk_finalmiddleleft.png" 
+    alt="AFK final design middle left"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: auto;">
+  <img 
+    src="images/afk_finalmiddleright.png" 
+    alt="AFK final design middle right"
+    class="case-study-grid-image-no-border"
+    loading="lazy"
+    style="height: 100%; object-fit: cover; object-position: top left;">
+</div>
+          
+          <img 
+            src="images/afk_finalbottom1.png" 
+            alt="AFK final design bottom 1"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+          
+          <img 
+            src="images/afk_finalbottom2.png" 
+            alt="AFK final design bottom 2"
+            class="case-study-section-image-no-border"
+            loading="lazy">
+          
+          <!-- CTA Button -->
+          <div class="case-study-cta">
+            <a href="https://www.figma.com/proto/fqUrdoBOe6DoWpHhSM6xaM/UXD104-Prototyped-Music-App?node-id=1-2020&t=h135VCnAuuxHzt4D-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="cta-button">Go to AFK App Prototype</a>
+          </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <div class="case-study-cta">
+          <a href="#top" class="cta-button">Back To Top</a>
+        </div>
+        
       </div>
     </section>
 
@@ -66,14 +264,14 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-content">
       <a href="index.html" class="footer-logo" aria-label="Erin Megrath Home">
-  <img src="images/website_em_logo.png" alt="EM Logo" class="footer-logo-icon-img">
-  <span>Erin Megrath</span>
-</a>
+        <img src="images/website_em_logo.png" alt="EM Logo" class="footer-logo-icon-img">
+        <span>Erin Megrath</span>
+      </a>
       <nav role="navigation" aria-label="Footer navigation">
         <ul class="footer-nav">
           <li><a href="mailto:erinmegrathdesign@gmail.com">Email</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/erin-megrath-89b423312" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/erinmegrathdesign" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </nav>
     </div>
