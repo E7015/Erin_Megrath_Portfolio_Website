@@ -1020,11 +1020,16 @@ button:focus {
   }
   
   /* Header - logo stays left, hamburger on right */
+  .site-header {
+    position: relative;
+  }
+  
   .header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   
   .logo {
@@ -1036,6 +1041,7 @@ button:focus {
     display: flex;
     order: 2;
     margin-left: 0;
+    z-index: 1001;
   }
   
   .nav-menu {
@@ -1056,7 +1062,7 @@ button:focus {
   }
   
   .nav-menu.mobile-active {
-    display: flex;
+    display: flex !important;
   }
   
   .nav-menu li {
@@ -1069,6 +1075,12 @@ button:focus {
     display: block;
     padding: var(--spacing-sm);
     font-size: var(--text-md);
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover {
+    opacity: 0.7;
   }
   
   .logo-icon,

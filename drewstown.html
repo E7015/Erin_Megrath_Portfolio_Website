@@ -29,7 +29,6 @@
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">CV</a></li>
         </ul>
       </nav>
     </div>
@@ -226,77 +225,37 @@
 <!-- Hamburger Menu Script -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  const headerContent = document.querySelector('.header-content');
   const nav = document.querySelector('.nav-menu');
-  const header = document.querySelector('.site-header');
-  let hamburger = null;
   
-  // Check if we need hamburger menu
-  function checkHamburger() {
-    const existingHamburger = document.querySelector('.hamburger');
-    
-    if (window.innerWidth <= 767) {
-      if (!existingHamburger) {
-        // Create hamburger button
-        hamburger = document.createElement('button');
-        hamburger.className = 'hamburger';
-        hamburger.setAttribute('aria-label', 'Toggle menu');
-        hamburger.setAttribute('aria-expanded', 'false');
-        hamburger.innerHTML = '<span></span><span></span><span></span>';
-        
-        // Insert after logo in header-content
-        const headerContent = document.querySelector('.header-content');
-        headerContent.appendChild(hamburger);
-        
-        // Add click event
-        hamburger.addEventListener('click', function(e) {
-          e.stopPropagation();
-          const isActive = nav.classList.toggle('mobile-active');
-          hamburger.setAttribute('aria-expanded', isActive);
-        });
-      }
-    } else {
-      // Remove hamburger on larger screens
-      if (existingHamburger) {
-        existingHamburger.remove();
-        hamburger = null;
-      }
-      nav.classList.remove('mobile-active');
-    }
-  }
+  if (!headerContent || !nav) return;
   
-  // Initial check
-  checkHamburger();
+  // Create hamburger button
+  const hamburger = document.createElement('button');
+  hamburger.className = 'hamburger';
+  hamburger.setAttribute('aria-label', 'Toggle menu');
+  hamburger.innerHTML = '<span></span><span></span><span></span>';
+  headerContent.appendChild(hamburger);
   
-  // Close menu when clicking outside
+  // Toggle menu
+  hamburger.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    nav.classList.toggle('mobile-active');
+  });
+  
+  // Close when clicking outside
   document.addEventListener('click', function(e) {
-    const hamburger = document.querySelector('.hamburger');
-    if (nav && hamburger && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
       nav.classList.remove('mobile-active');
-      hamburger.setAttribute('aria-expanded', 'false');
     }
   });
   
-  // Close menu when clicking a link
-  if (nav) {
-    const navLinks = nav.querySelectorAll('a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        nav.classList.remove('mobile-active');
-        const hamburger = document.querySelector('.hamburger');
-        if (hamburger) {
-          hamburger.setAttribute('aria-expanded', 'false');
-        }
-      });
+  // Close when clicking nav links
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function() {
+      nav.classList.remove('mobile-active');
     });
-  }
-  
-  // Re-check on resize with debounce
-  let resizeTimer;
-  window.addEventListener('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-      checkHamburger();
-    }, 250);
   });
 });
 </script>
